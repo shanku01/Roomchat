@@ -1,0 +1,19 @@
+{
+  "name": "messenger",
+  "version": "1.0.0",
+  "description": "messenger app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "shanku01",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "moment": "^2.29.1",
+    "socket.io": "^3.0.3"
+  }
+}
