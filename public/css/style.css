@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 :root {
-    --dark-color-a: #667aff;
-    --dark-color-b: #7386ff;
-    --light-color: #e6e9ff;
-    --success-color: #5cb85c;
-    --error-color: #d9534f;
+    --myOnlyColor:linear-gradient(to right, #d2546b, #db4e79, #e1498a, #e4469e, #e447b4, #e049bf, #db4dca, #d551d5, #d153d6, #cc55d6, #c857d7, #c359d7);
+    --myShadeBtn:rgba(1,1,1,0.2);
+    --myShade:rgba(1,1,1,0.5);
 }
 
 * {
@@ -16,9 +14,9 @@
 body {
     font-family: 'Sofia', cursive;
     font-size: 16px;
-    background: rgba(99, 28, 215, 0.4);
-    background: linear-gradient(90deg, rgba(99, 28, 215, 0.5) 0%, rgba(52, 9, 121, 1) 50%, rgba(223, 23, 189, 1) 100%);
+    background-image: var(--myOnlyColor);
     margin: 20px;
+    color: white;
 }
 
 ul {
@@ -39,7 +37,7 @@ a {
 
 .btn {
     background: rgb(34, 43, 195);
-    background: linear-gradient(0deg, rgba(34, 43, 195, 1) 0%, rgba(232, 21, 224, 1) 100%);
+    background: var(--myShadeBtn);
     border: none;
     color: white;
     padding: 15px 32px;
@@ -56,22 +54,20 @@ a {
 
 .chat-container {
     max-width: 1100px;
-    background: #fff;
+    background: var(--myShadeBtn);
     margin: 30px auto;
     overflow: hidden;
 }
 
 .chat-header {
-    background: var(--dark-color-a);
-    color: #fff;
+    background: var(--myShade);
+    color: white;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgb(92, 96, 172);
-    background: linear-gradient(180deg, rgb(92, 96, 172) 0%, rgb(185, 38, 180) 100%);
 }
 
 .chat-main {
@@ -80,16 +76,15 @@ a {
 }
 
 .chat-sidebar {
-    background: rgb(92, 96, 172);
-    background: linear-gradient(90deg, rgb(92, 96, 172) 0%, rgb(185, 38, 180) 100%);
-    color: #fff;
+    background: var(--myShade);
+    color: white;
     padding: 20px 20px 60px;
     overflow-y: scroll;
 }
 
 .chat-sidebar h2 {
     font-size: 20px;
-    background: rgba(0, 0, 0, 0.1);
+    background: var(--myShade);
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -111,7 +106,7 @@ a {
 .chat-messages .message {
     padding: 10px;
     margin-bottom: 15px;
-    background-color: var(--light-color);
+    background-color: var(--myShade);
     border-radius: 5px;
     overflow-wrap: break-word;
 }
@@ -119,7 +114,7 @@ a {
 .chat-messages .message .meta {
     font-size: 15px;
     font-weight: bold;
-    color: var(--dark-color-b);
+    color: white;
     opacity: 0.7;
     margin-bottom: 7px;
 }
@@ -130,8 +125,7 @@ a {
 
 .chat-form-container {
     padding: 20px 30px;
-    background: rgb(92, 96, 172);
-    background: linear-gradient(0deg, rgb(92, 96, 172) 0%, rgb(185, 38, 180) 100%);
+    background: var(--myShade);
 }
 
 .chat-form-container form {
@@ -157,8 +151,7 @@ a {
 .join-header {
     text-align: center;
     padding: 20px;
-    background: rgb(232, 21, 224);
-    background: linear-gradient(0deg, rgba(232, 21, 224, 1) 0%, rgba(34, 43, 195, 1) 100%);
+    background: var(--myShade);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-radius: 20% 20% 0 0;
@@ -167,8 +160,7 @@ a {
 .join-main {
     padding: 30px 40px;
     border-radius: 0 0 20% 20%;
-    background: rgb(255, 0, 211);
-    background: linear-gradient(90deg, rgba(255, 0, 211, 1) 0%, rgba(52, 9, 121, 1) 50%, rgba(99, 28, 215, 1) 100%);
+    background: var(--myShade);
 }
 
 .join-main p {
